@@ -1,6 +1,4 @@
-# Group YY - {Short snappy Title of your project}
-
-- Your title can change over time.
+# Group 60 - Thalla
 
 ## Milestones
 
@@ -16,8 +14,8 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Team Members
 
-- Person 1: one sentence about you!
-- Person 2: one sentence about you!
+- Ojus Sharma: Definitely not a Dhoni fan.
+- Ishaan Solanki: Definitly not a fan of the best team in the IPL.
 - Person 3: one sentence about you!
 
 ## Images
