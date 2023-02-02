@@ -6,8 +6,8 @@ Our team aims to bring a fresh perspective to cricket. We aspire to **uncover pa
  that were previously unknown to us, and the general public.
 
 ## ***II***
-As cricket enthusiats, we are committed to provide an elaborate and accurate conclusion for the following:
-> What is the best possible team of 11 players in the history of the IPL?
+As cricket enthusiats, we are committed to provide an elaborate and accurate conclusion for the following:\
+***What is the best possible team of 11 players in the history of the IPL?***
 
 ![IPL - MS Dhoni Trophy](images/ipl-dhoni-trophy.jpg)
 ## ***III***
