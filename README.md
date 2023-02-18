@@ -15,8 +15,8 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 ## Team Members
 
 - Ojus Sharma: Definitely not a Dhoni fan.
-- Ishaan Solanki: Definitly not a fan of the best team in the IPL.
-- Person 3: one sentence about you!
+- Ishaan Solanki: Definitely not a fan of the best team in the IPL.
+- Sparsh Khanna : Definitely a KL Rahul fan.
 
 ## Images
 
