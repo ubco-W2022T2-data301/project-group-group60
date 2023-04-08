@@ -1,4 +1,4 @@
-# Group 60 - Thalla
+# Group 60 - The Great 11 of the Indian Premiere League
 
 ## **Milestones**
 
