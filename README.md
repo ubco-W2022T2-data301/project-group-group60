@@ -39,10 +39,18 @@ The data has been collected through a combination of manual data entry and autom
 
 ## Images
 
-{You should use this area to add a screenshot of an interesting plot, or of your dashboard}
 
-<img src ="images/test.png" width="100px">
+## Top 4 Batsmen:
+![Ishaan Dashboard](images/Ishaan%20Dashboard.png)
+
+## Top 4 Bowlers:
+![Sparsh Dashboard](images/Sparsh%20Dashboard.jpeg)
+
+## Best Wicketkeeper and Top 2 Allrounders:
+![Ojus Dashboard](images/Ojus%20Dashboard.jpeg)
+
 
 ## References
 
-{Add your stuff here}
+Credit for all images goes to Tata IPL
+
