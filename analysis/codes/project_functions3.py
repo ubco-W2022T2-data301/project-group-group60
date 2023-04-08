@@ -44,7 +44,7 @@ def find_wicketkeeper_stats(bb_df, us):
 
 def find_and_merge_batting_stats_of_keepers(fws):
     kps = fws.index.tolist()
-    btsmn = pd.read_csv('../data/processed/batsman_stats.csv')
+    btsmn = pd.read_csv('../data/processed/Ishaan/batsman_stats.csv')
     btsmn = btsmn[ btsmn['batter'].isin(kps)]
     fws = fws.reset_index().sort_values(by = 'fielders_involved')
     btsmn= btsmn.reset_index().sort_values(by = 'batter').rename(columns={'batter':'fielders_involved'})
@@ -52,7 +52,7 @@ def find_and_merge_batting_stats_of_keepers(fws):
     return keeper_batsmen
 
 def find_allrounder_stats():
-    btsmn = pd.read_csv('../data/processed/batsman_stats.csv')
+    btsmn = pd.read_csv('../data/processed/Ishaan/batsman_stats.csv')
     x = btsmn['batter'].unique().tolist()
     bwlr = pd.read_csv('../data/processed/bowlerstatssparsh.csv')
     bwlr = bwlr[ bwlr['bowler'].isin(x)]
@@ -63,7 +63,7 @@ def find_allrounder_stats():
     df = allr
     df['Runs Given per Wicket'] = df['total_run']/df['wickets_taken']
     df = df.drop(columns=['Wickets', 'Balls Faced', 'overs_bowled', 'balls_bowled', 'extras_given']).rename(columns={'total_run' : 'Runs Given', 'wickets_taken' : 'Wickets Taken', 'Total Runs' : 'Runs Scored'}).round(2)
-    df.to_csv("../data/processed/allRounder_stats1.csv")
+    #df.to_csv("../data/processed/allRounder_stats1.csv")
     return df
 
 
