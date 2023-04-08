@@ -58,11 +58,12 @@ def find_allrounder_stats():
     bwlr = bwlr[ bwlr['bowler'].isin(x)]
     btsmn= btsmn.rename(columns={'batter':'bowler'})
     allr = pd.merge(bwlr, btsmn, on='bowler', how='left').round(2)
-    #allr = all.drop(columns=['index','Matches','Total Runs','Balls Faced', 'Wickets'])
+   # allr = all.drop(columns=['index','Matches','Total Runs','Balls Faced', 'Wickets'])
     #allr.to_csv("../data/processed/allRounder_stats.csv")
     df = allr
     df['Runs Given per Wicket'] = df['total_run']/df['wickets_taken']
     df = df.drop(columns=['Wickets', 'Balls Faced', 'overs_bowled', 'balls_bowled', 'extras_given']).rename(columns={'total_run' : 'Runs Given', 'wickets_taken' : 'Wickets Taken', 'Total Runs' : 'Runs Scored'}).round(2)
+    df.to_csv("../data/processed/allRounder_stats1.csv")
     return df
 
 
