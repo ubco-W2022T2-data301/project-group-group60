@@ -19,12 +19,12 @@ def calculate_bowling_stats(b):
     return bo
 
 def calculate_bowling_index(bowler_stats):
-    bowling_index = (0.6 * (((bowler_stats["wickets_taken"] / bowler_stats["overs_bowled"]) / bowler_stats["Economy Rate"]) * 100) - (0.005 * bowler_stats["extras_given"])) *      (bowler_stats["overs_bowled"] ** 0.1)
+    bowling_index = 0.6 * ((((100-(bowler_stats["total_run"] / bowler_stats["wickets_taken"])) - bowler_stats["Economy Rate"]) ) *      (bowler_stats["overs_bowled"] ** 0.09))
     return bowling_index
 
 
 def calculate_bowling_index1(bowler_stats):
-    bowling_index = (0.2 * (((bowler_stats["Wickets"] / bowler_stats["Overs"]) / bowler_stats["Economy Rate"]) * 100)  * (bowler_stats["Overs"] ** 0.1))
+    bowling_index = 0.2 * ((((100-(bowler_stats["Total Runs"] / bowler_stats["Wickets"])) - bowler_stats["Economy Rate"]) ) *      (bowler_stats["Overs"] ** 0.09))
     return bowling_index
 
 
