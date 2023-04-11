@@ -2,7 +2,15 @@
 
 ## **Milestones**
 
-Details for Milestone are available on Canvas (left sidebar, Course Project).
+Milestone 1: Create Team and Finalize Datatset
+
+Milestone 2: Prepare Research Questions, Load Data
+
+Milestone 3: Perform Exploratory Data Analysis (EDA)
+
+Milestone 4: Create Visualizations, Complete Analysis, and Lay out Pipeline
+
+Milestone 5: Present the Dashboard!
 
 <br>
 
@@ -52,5 +60,5 @@ The data has been collected through a combination of manual data entry and autom
 
 ## References
 
-Credit for all images goes to Tata IPL
+Credit for all images goes to Tata IPL Inc
 
