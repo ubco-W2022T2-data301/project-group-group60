@@ -12,11 +12,19 @@ def load_and_process(url_or_path_to_csv_file):
     
     
 def calculate_bowling_stats(b):
-    bo = (b
-          .agg({'ID': 'nunique', 'total_run': 'sum', 'ballnumber': 'count', 'isWicketDelivery': 'sum'})
-          .rename(columns={'ID': 'Matches', 'total_run': 'Total Runs', 'ballnumber': 'Balls Bowled', 'isWicketDelivery': 'Wickets'})
+    bo = (b.groupby('bowler')
+          .apply(lambda x: pd.Series({
+              'Matches': x['ID'].nunique(),
+              'Total Runs': x['total_run'].sum(),
+              'Balls Bowled': x['ballnumber'].count(),
+              'Wickets': x['isWicketDelivery'].sum()
+          }))
+          .reset_index()
+          .rename(columns={'bowler': 'Bowler'})
          )
     return bo
+
+
 
 def calculate_bowling_index(bowler_stats):
     bowling_index = 0.6 * ((((100-(bowler_stats["total_run"] / bowler_stats["wickets_taken"])) - bowler_stats["Economy Rate"]) ) *      (bowler_stats["overs_bowled"] ** 0.09))
@@ -26,6 +34,5 @@ def calculate_bowling_index(bowler_stats):
 def calculate_bowling_index1(bowler_stats):
     bowling_index = 0.2 * ((((100-(bowler_stats["Total Runs"] / bowler_stats["Wickets"])) - bowler_stats["Economy Rate"]) ) *      (bowler_stats["Overs"] ** 0.09))
     return bowling_index
-
 
 
