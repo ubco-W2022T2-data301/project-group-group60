@@ -12,21 +12,57 @@ def load_and_process(url_or_path_to_csv_file):
     
     
 
-def get_batsman_stats(batsman_group):
-    
+def get_batsman_stats(df3):
+    batsman_group = df3.groupby('batter')
     batsman_stats = (batsman_group
-                     .agg(matches=('ID', 'nunique'),
-                          total_runs=('batsman_run', 'sum'),
-                          balls_faced=('ballnumber', 'count'),
-                          wickets=('isWicketDelivery', 'sum')))
-    
-
-    batsman_stats = batsman_stats.rename(columns={'matches': 'Matches',
-                                                  'total_runs': 'Total Runs',
-                                                  'balls_faced': 'Balls Faced',
-                                                  'wickets': 'Wickets'})
+                     .apply(lambda x: pd.DataFrame({'Matches': x['ID'].nunique(),
+                                                    'Total Runs': x['batsman_run'].sum(),
+                                                    'Balls Faced': x['ballnumber'].count(),
+                                                    'Wickets': x['isWicketDelivery'].sum()}, index=[x.name]))
+                     .reset_index(level=1, drop=True)
+                     .rename(columns={'Matches': 'Matches',
+                                      'Total Runs': 'Total Runs',
+                                      'Balls Faced': 'Balls Faced',
+                                      'Wickets': 'Wickets'}))
     
     return batsman_stats
+
+def get_chasing_stats(df3):
+    df3 = df3[df3['innings'] > 1]
+    batsman_group = df3.groupby('batter')
+    batsman_stats = (batsman_group
+                     .apply(lambda x: pd.DataFrame({'Matches': x['ID'].nunique(),
+                                                    'Total Runs': x['batsman_run'].sum(),
+                                                    'Balls Faced': x['ballnumber'].count(),
+                                                    'Wickets': x['isWicketDelivery'].sum()}, index=[x.name]))
+                     .reset_index(level=1, drop=True)
+                     .rename(columns={'Matches': 'Matches',
+                                      'Total Runs': 'Total Runs',
+                                      'Balls Faced': 'Balls Faced',
+                                      'Wickets': 'Wickets'}))
+    
+    return batsman_stats
+
+def get_death_stats(df3):
+    df3 = df3[df3['overs'] > 14]
+    batsman_group = df3.groupby('batter')
+    batsman_stats = (batsman_group
+                     .apply(lambda x: pd.DataFrame({'Matches': x['ID'].nunique(),
+                                                    'Total Runs': x['batsman_run'].sum(),
+                                                    'Balls Faced': x['ballnumber'].count(),
+                                                    'Wickets': x['isWicketDelivery'].sum()}, index=[x.name]))
+                     .reset_index(level=1, drop=True)
+                     .rename(columns={'Matches': 'Matches',
+                                      'Total Runs': 'Total Runs',
+                                      'Balls Faced': 'Balls Faced',
+                                      'Wickets': 'Wickets'}))
+    
+    return batsman_stats
+
+
+
+
+
 
 def calculate_batsman_score(batsman_stats):
     score = (batsman_stats['Total Runs'] - batsman_stats['Balls Faced']) / \
