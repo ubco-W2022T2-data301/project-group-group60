@@ -24,6 +24,35 @@ def calculate_bowling_stats(b):
          )
     return bo
 
+def calculate_death_stats(b):
+    b = b[b['overs'] >14]
+    bo = (b.groupby('bowler')
+          .apply(lambda x: pd.Series({
+              'Matches': x['ID'].nunique(),
+              'Total Runs': x['total_run'].sum(),
+              'Balls Bowled': x['ballnumber'].count(),
+              'Wickets': x['isWicketDelivery'].sum()
+          }))
+          .reset_index()
+          .rename(columns={'bowler': 'Bowler'})
+         )
+    return bo
+
+def calculate_playoff_stats(new_ball, new_matches):
+    id_list = new_matches['ID'].tolist()
+    df3 = new_ball[new_ball['ID'].isin(id_list)]
+    bo = (df3.groupby('bowler')
+          .apply(lambda x: pd.Series({
+              'Matches': x['ID'].nunique(),
+              'Total Runs': x['total_run'].sum(),
+              'Balls Bowled': x['ballnumber'].count(),
+              'Wickets': x['isWicketDelivery'].sum()
+          }))
+          .reset_index()
+          .rename(columns={'bowler': 'Bowler'})
+         )
+    return bo
+
 
 
 def calculate_bowling_index(bowler_stats):
