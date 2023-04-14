@@ -30,254 +30,11 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='Wicketkeeping_stats' inline='true' name='federated.0saieso1xs3ib717qwokq0ewwlv3' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Wicketkeeping_stats' name='textscan.1lj6ssi0xxoe581cccngy0d5iwc8'>
-            <connection class='textscan' directory='C:/Users/ojuss/Documents/primus/DATA301/Project/project-group-group60/data/processed' filename='Wicketkeeping_stats.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
-            <column datatype='string' name='F1' ordinal='0' />
-            <column datatype='string' name='fielders_involved' ordinal='1' />
-            <column datatype='integer' name='Catches' ordinal='2' />
-            <column datatype='integer' name='Stumpings' ordinal='3' />
-            <column datatype='integer' name='Innings' ordinal='4' />
-            <column datatype='integer' name='Dismissals' ordinal='5' />
-            <column datatype='real' name='Dis/Inn' ordinal='6' />
-            <column datatype='real' name='Strike Rate' ordinal='7' />
-            <column datatype='real' name='Runs Per Wicket' ordinal='8' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
-            <column datatype='string' name='F1' ordinal='0' />
-            <column datatype='string' name='fielders_involved' ordinal='1' />
-            <column datatype='integer' name='Catches' ordinal='2' />
-            <column datatype='integer' name='Stumpings' ordinal='3' />
-            <column datatype='integer' name='Innings' ordinal='4' />
-            <column datatype='integer' name='Dismissals' ordinal='5' />
-            <column datatype='real' name='Dis/Inn' ordinal='6' />
-            <column datatype='real' name='Strike Rate' ordinal='7' />
-            <column datatype='real' name='Runs Per Wicket' ordinal='8' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>F1</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[F1]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>F1</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>fielders_involved</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[fielders_involved]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>fielders_involved</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Catches</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Catches]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Catches</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Stumpings</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Stumpings]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Stumpings</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Innings</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Innings]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Innings</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Dismissals</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Dismissals]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Dismissals</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Dis/Inn</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Dis/Inn]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Dis/Inn</remote-alias>
-            <ordinal>6</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Strike Rate</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Strike Rate]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Strike Rate</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Runs Per Wicket</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Runs Per Wicket]</local-name>
-            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
-            <remote-alias>Runs Per Wicket</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Weighted Score' datatype='real' name='[Calculation_1557964009313497088]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='[Catches]*0.15 + [Stumpings]*0.15 + [Dis/Inn]*0.3 + [Runs Per Wicket]*0.2 + [Strike Rate]*0.2' />
-      </column>
-      <column datatype='integer' name='[Catches]' role='measure' type='quantitative' />
-      <column datatype='real' name='[Dis/Inn]' role='measure' type='quantitative' />
-      <column datatype='integer' name='[Dismissals]' role='measure' type='quantitative' />
-      <column datatype='string' name='[F1]' role='dimension' type='nominal' />
-      <column caption='Innings ' datatype='integer' name='[Innings]' role='measure' type='quantitative' />
-      <column datatype='real' name='[Runs Per Wicket]' role='measure' type='quantitative' />
-      <column datatype='real' name='[Strike Rate]' role='measure' type='quantitative' />
-      <column datatype='integer' name='[Stumpings]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Wicketkeeping_stats.csv' datatype='table' name='[__tableau_internal_object_id__].[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]' role='measure' type='quantitative' />
-      <column caption='Player' datatype='string' name='[fielders_involved]' role='dimension' type='nominal' />
-      <column-instance column='[Catches]' derivation='Sum' name='[sum:Catches:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Dis/Inn]' derivation='Sum' name='[sum:Dis/Inn:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Dismissals]' derivation='Sum' name='[sum:Dismissals:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Runs Per Wicket]' derivation='Sum' name='[sum:Runs Per Wicket:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Strike Rate]' derivation='Sum' name='[sum:Strike Rate:qk]' pivot='key' type='quantitative' />
-      <column-instance column='[Stumpings]' derivation='Sum' name='[sum:Stumpings:qk]' pivot='key' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[:Measure Names]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Dis/Inn:qk]&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3]&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Strike Rate:qk]&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Runs Per Wicket:qk]&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Stumpings:qk]&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:F1:qk]&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Catches:qk]&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Dismissals:qk]&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Wicketkeeping_stats.csv' id='Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F'>
-            <properties context=''>
-              <relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
-                  <column datatype='string' name='F1' ordinal='0' />
-                  <column datatype='string' name='fielders_involved' ordinal='1' />
-                  <column datatype='integer' name='Catches' ordinal='2' />
-                  <column datatype='integer' name='Stumpings' ordinal='3' />
-                  <column datatype='integer' name='Innings' ordinal='4' />
-                  <column datatype='integer' name='Dismissals' ordinal='5' />
-                  <column datatype='real' name='Dis/Inn' ordinal='6' />
-                  <column datatype='real' name='Strike Rate' ordinal='7' />
-                  <column datatype='real' name='Runs Per Wicket' ordinal='8' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='allRounder_stats' inline='true' name='federated.10r4ucr0usye3c1dicpb614jntlc' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='allRounder_stats' name='textscan.18zblc81b0pihr12en7g010wfru5'>
-            <connection class='textscan' directory='C:/Users/ojuss/Documents/primus/DATA301/Project/project-group-group60/data/processed' filename='allRounder_stats.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/ojuss/Documents/primus/DATA301/Project/project-group-group60/data/processed/Ojus' filename='allRounder_stats.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18zblc81b0pihr12en7g010wfru5' name='allRounder_stats.csv' table='[allRounder_stats#csv]' type='table'>
@@ -651,6 +408,249 @@
                   <column datatype='real' name='Strike Rate' ordinal='12' />
                   <column datatype='real' name='Runs scored per wicket' ordinal='13' />
                   <column datatype='real' name='Runs Given per Wicket' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Wicketkeeping_stats' inline='true' name='federated.0saieso1xs3ib717qwokq0ewwlv3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Wicketkeeping_stats' name='textscan.1lj6ssi0xxoe581cccngy0d5iwc8'>
+            <connection class='textscan' directory='C:/Users/ojuss/Documents/primus/DATA301/Project/project-group-group60/data/processed/Ojus' filename='Wicketkeeping_stats.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='fielders_involved' ordinal='1' />
+            <column datatype='integer' name='Catches' ordinal='2' />
+            <column datatype='integer' name='Stumpings' ordinal='3' />
+            <column datatype='integer' name='Innings' ordinal='4' />
+            <column datatype='integer' name='Dismissals' ordinal='5' />
+            <column datatype='real' name='Dis/Inn' ordinal='6' />
+            <column datatype='real' name='Strike Rate' ordinal='7' />
+            <column datatype='real' name='Runs Per Wicket' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='fielders_involved' ordinal='1' />
+            <column datatype='integer' name='Catches' ordinal='2' />
+            <column datatype='integer' name='Stumpings' ordinal='3' />
+            <column datatype='integer' name='Innings' ordinal='4' />
+            <column datatype='integer' name='Dismissals' ordinal='5' />
+            <column datatype='real' name='Dis/Inn' ordinal='6' />
+            <column datatype='real' name='Strike Rate' ordinal='7' />
+            <column datatype='real' name='Runs Per Wicket' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fielders_involved</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fielders_involved]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>fielders_involved</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Catches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Catches]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Catches</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stumpings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stumpings]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Stumpings</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Innings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Innings]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Innings</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dismissals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dismissals]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Dismissals</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dis/Inn</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dis/Inn]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Dis/Inn</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strike Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Strike Rate]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Strike Rate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runs Per Wicket</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Runs Per Wicket]</local-name>
+            <parent-name>[Wicketkeeping_stats.csv]</parent-name>
+            <remote-alias>Runs Per Wicket</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Weighted Score' datatype='real' name='[Calculation_1557964009313497088]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Catches]*0.15 + [Stumpings]*0.15 + [Dis/Inn]*0.3 + [Runs Per Wicket]*0.2 + [Strike Rate]*0.2' />
+      </column>
+      <column datatype='integer' name='[Catches]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Dis/Inn]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Dismissals]' role='measure' type='quantitative' />
+      <column datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column caption='Innings ' datatype='integer' name='[Innings]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Runs Per Wicket]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Strike Rate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Stumpings]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Wicketkeeping_stats.csv' datatype='table' name='[__tableau_internal_object_id__].[Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F]' role='measure' type='quantitative' />
+      <column caption='Player' datatype='string' name='[fielders_involved]' role='dimension' type='nominal' />
+      <column-instance column='[Catches]' derivation='Sum' name='[sum:Catches:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Dis/Inn]' derivation='Sum' name='[sum:Dis/Inn:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Dismissals]' derivation='Sum' name='[sum:Dismissals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Runs Per Wicket]' derivation='Sum' name='[sum:Runs Per Wicket:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Strike Rate]' derivation='Sum' name='[sum:Strike Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Stumpings]' derivation='Sum' name='[sum:Stumpings:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Dis/Inn:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Strike Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Runs Per Wicket:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Stumpings:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Catches:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0saieso1xs3ib717qwokq0ewwlv3].[sum:Dismissals:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Wicketkeeping_stats.csv' id='Wicketkeeping_stats.csv_17D2761394EF4063B8E9D3667F61468F'>
+            <properties context=''>
+              <relation connection='textscan.1lj6ssi0xxoe581cccngy0d5iwc8' name='Wicketkeeping_stats.csv' table='[Wicketkeeping_stats#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='F1' ordinal='0' />
+                  <column datatype='string' name='fielders_involved' ordinal='1' />
+                  <column datatype='integer' name='Catches' ordinal='2' />
+                  <column datatype='integer' name='Stumpings' ordinal='3' />
+                  <column datatype='integer' name='Innings' ordinal='4' />
+                  <column datatype='integer' name='Dismissals' ordinal='5' />
+                  <column datatype='real' name='Dis/Inn' ordinal='6' />
+                  <column datatype='real' name='Strike Rate' ordinal='7' />
+                  <column datatype='real' name='Runs Per Wicket' ordinal='8' />
                 </columns>
               </relation>
             </properties>
@@ -2010,9 +2010,9 @@
         </zone>
         <zone forceUpdate='true' h='7991' id='168' type-v2='text' w='51045' x='48478' y='28085'>
           <formatted-text>
-            <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>TWO DIFFERENT SCORES ARE CALCULATED TO FIND THE BEST BATTING AND BOWLING FAVOURED ALL-ROUNDERS</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>WEIGHTED SCORES ARE CALCULATED FOR ALL WICKETKEEPERS BASED ON THE FOLLOWING METRICS: </run>
             <run fontalignment='1'>Æ&#10;</run>
-            <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>EVALUATION FACTORS:STRIKE RATE, TOTAL DISMISSALS, RUNS SCORED PER WICKET,</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>STRIKE RATE, TOTAL DISMISSALS, RUNS SCORED PER WICKET,</run>
             <run fontalignment='1'>Æ&#10;</run>
             <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>TOTAL INNINGS, STUMPINGS, DISMISSALS PER INNINGS, CATCHES</run>
           </formatted-text>
@@ -2032,8 +2032,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='3600' minheight='3600' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='201' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98120' id='200' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone h='100000' id='235' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='234' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
                 <zone forceUpdate='true' h='9518' id='142' type-v2='text' w='69851' x='13075' y='-940'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffbf00' fontname='Verdana Pro' fontsize='16'>THE BEST WICKETKEEPER AND ALL ROUNDERS IN IPL HISTORY</run>
@@ -2328,9 +2328,9 @@
                 </zone>
                 <zone forceUpdate='true' h='7991' id='168' type-v2='text' w='51045' x='48478' y='28085'>
                   <formatted-text>
-                    <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>TWO DIFFERENT SCORES ARE CALCULATED TO FIND THE BEST BATTING AND BOWLING FAVOURED ALL-ROUNDERS</run>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>WEIGHTED SCORES ARE CALCULATED FOR ALL WICKETKEEPERS BASED ON THE FOLLOWING METRICS: </run>
                     <run fontalignment='1'>Æ&#10;</run>
-                    <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>EVALUATION FACTORS:STRIKE RATE, TOTAL DISMISSALS, RUNS SCORED PER WICKET,</run>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>STRIKE RATE, TOTAL DISMISSALS, RUNS SCORED PER WICKET,</run>
                     <run fontalignment='1'>Æ&#10;</run>
                     <run fontalignment='1' fontcolor='#ffffff' fontname='Verdana Pro' fontsize='8'>TOTAL INNINGS, STUMPINGS, DISMISSALS PER INNINGS, CATCHES</run>
                   </formatted-text>
@@ -2669,7 +2669,7 @@
         <viewpoint name='Wicketkeeper Stats' />
         <viewpoint name='Wicketkeeping Scores' />
       </viewpoints>
-      <active id='183' />
+      <active id='168' />
       <simple-id uuid='{73D4EE99-4971-4E00-BB37-B2D056814405}' />
     </window>
     <window class='worksheet' name='All Rounders Visualizations'>
@@ -2691,9 +2691,9 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='3' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[:Measure Names]' size='43' type='color' />
-            <card pane-specification-id='5' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[sum:Total Runs:qk]' size='42' type='size' />
-            <card pane-specification-id='6' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[sum:wickets_taken:qk]' size='64' type='size' />
+            <card pane-specification-id='3' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[:Measure Names]' size='34' type='color' />
+            <card pane-specification-id='5' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[sum:Total Runs:qk]' size='33' type='size' />
+            <card pane-specification-id='6' param='[federated.10r4ucr0usye3c1dicpb614jntlc].[sum:wickets_taken:qk]' size='51' type='size' />
           </strip>
         </edge>
       </cards>
