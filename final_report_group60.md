@@ -204,7 +204,7 @@ To be considered the best, all-rounders must have a low economy rate as it indic
 
 <br>
 
-![Bowling Stats for All Rounders](images/RQ3b1.png)
+![Bowling Stats for All Rounders](images/RQ3B1.png)
 *Figure 3.B.2: Barplot of Strike Rate and Runs Scored per Wicket in the IPL by Wicketkeepers*
 
 **DJ Bravo has the highest Total Wickets Taken while SP Narine has the Lowest Economy Rate**. 
